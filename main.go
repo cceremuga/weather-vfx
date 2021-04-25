@@ -127,7 +127,7 @@ func printForecastToImage(forecast []DailyForecast) error {
 	}
 
 	// Save that RGBA image to disk.
-	outFile, err := os.Create("out.png")
+	outFile, err := os.Create("out/out.png")
 	if err != nil {
 		log.Println(err)
 		os.Exit(1)
